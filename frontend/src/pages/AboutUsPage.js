@@ -9,7 +9,6 @@ const AboutUsPage = () => {
     <div>
       <Navbar/>
       <About />
-      <Footer/>
     </div>
   );
 };
