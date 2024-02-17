@@ -1,18 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from "./pages/404notfound";
+import Home from "./pages/Home";
+import Artist from "./pages/Artist";
 
-function Home() {
-  return <h1>Home Page</h1>;
-}
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" component={Home} />
-        {/* Other routes */}
+        <Route exact path="/" element={<Home/>} />
+       
         <Route exact path="*" element={<NotFound/>}/>
+        <Route exact path="/Artist" element={<Artist/>}/>
       </Routes>
     </Router>
   );
