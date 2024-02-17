@@ -1,14 +1,19 @@
+
 import { useState } from "react";
 import { CiCirclePlus } from "react-icons/ci";
-import "../css/profile.css";
+import '../css/profile.css';
 
 const UserProfile = ({ parameter }) => {
   return (
     <>
       <div className="user-info-container">
-        <div className="user-img bg-bisque rounded-full"></div>
-        <p className="user-name">{parameter.username}</p>
-        <button className="donate-btn bg-gray-500 text-white">
+        <div className="user-img ">
+          {parameter.userimage}
+        </div>
+        <p className="user-name ">
+          {parameter.username}
+        </p>
+        <button className="donate-btn">
           COLLECT FUND
         </button>
       </div>
@@ -16,7 +21,7 @@ const UserProfile = ({ parameter }) => {
   );
 };
 
-const Profile = () => {
+const Profile = ({onClose}) => {
   const userProfileData = [
     /*backend array*/
     {
@@ -56,17 +61,23 @@ const Profile = () => {
 
   return (
     <>
-      <div className="container-wrapper"></div>
+      <div className="container-wrapper" onClick={onClose}>
+        {" "}
+      </div>
       <div className="profile-container bg-white grid grid-cols-2">
+
         <UserProfile parameter={userProfileData[2]} />
-        <div className="songs-container bg-aliceblue overflow-auto h-96 p-4">
-          <div className="add-event-btn-div flex justify-center items-center h-12">
-            <CiCirclePlus className="add-event-btn" onClick={handleClick} />
+        <div className="songs-container grid col-span-1 bg-aliceblue overflow-auto h-96 justify-center items-center flex-wrap gap-8 flex-col">
+          <div className="add-event-btn-div flex items-center justify-center w-full h-12">
+            <CiCirclePlus
+              className="add-event-btn h-8 w-8 text-black cursor-pointer"
+              onClick={handleClick}
+            />
           </div>
-          {SongsData.slice(0, index + 1).map((item, i) => (
+          {SongsData.slice(0, index + 1).map((item, idx) => (
             <div
-              key={i}
-              className="songs-div bg-yellow-400 rounded-lg text-center py-2.5"
+              key={idx}
+              className="songs-div bg-orange-400 self-center text-center h-10 w-80 rounded-md"
             >
               {item.songs}
             </div>
@@ -78,5 +89,7 @@ const Profile = () => {
 };
 
 export default Profile;
+
+
 
 

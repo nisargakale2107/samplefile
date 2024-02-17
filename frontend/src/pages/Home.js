@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Profile from './Profile'
+
 
 const Home = () => {
   return (
@@ -10,8 +10,8 @@ const Home = () => {
       <div>
 
       </div>
-<Profile/>
-<Footer/>
+
+   <Footer/>
     </div>
   )
 }
