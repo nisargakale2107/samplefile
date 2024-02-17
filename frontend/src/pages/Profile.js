@@ -5,6 +5,7 @@ import "../css/profile.css";
 const UserProfile = ({ parameter }) => {
   return (
     <>
+      
       <div className="user-info-container">
         <div className="user-img">
           <img src={parameter.userimage} alt="user img" />
@@ -18,7 +19,8 @@ const UserProfile = ({ parameter }) => {
   );
 };
 
-const Profile = () => {
+const Profile = ( ) => {
+
   const userProfileData = [
     /*backend array*/
     {
@@ -33,19 +35,20 @@ const Profile = () => {
       userimage: "user2.jpg",
       username: "Aarsh",
     },
-  ];
 
+  ];
+  
   const SongsData = [
-    { songs: "Song 1" },
-    { songs: "Song 2" },
-    { songs: "Song 3" },
-    { songs: "Song 4" },
-    { songs: "Song 5" },
-    { songs: "Song 6" },
-    { songs: "Song 7" },
-    { songs: "Song 8" },
-    { songs: "Song 9" },
-    { songs: "Song 10" },
+    {  songs: "Song 1" },
+    {  songs: "Song 2" },
+    {  songs: "Song 3" },
+    {  songs: "Song 4" },
+    {  songs: "Song 5" },
+    {  songs: "Song 6" },
+    {  songs: "Song 7" },
+    {  songs: "Song 8" },
+    {  songs: "Song 9" },
+    {  songs: "Song 10" },
   ];
 
   const [index, setIndex] = useState(3);
@@ -71,6 +74,7 @@ const Profile = () => {
             <div className="songs-div">{item.songs}</div>
             // </div>
           ))}
+
         </div>
       </div>
     </>
@@ -78,3 +82,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
