@@ -30,6 +30,7 @@
     grid-row: 4/5;
     height: 3rem;
     width: 10rem;
+    border-radius: 1.5rem;
     background-color: #FFF67E;
     cursor: pointer;
 }
