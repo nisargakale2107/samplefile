@@ -1,0 +1,46 @@
+.nav-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 10rem 2fr 3fr 2fr 2rem;
+    width: 100%;
+    height: 4rem;
+    background-color:#D2DE32;
+}
+
+.website-name {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/2;
+    font-size: 1.2rem;
+}
+
+.other {
+    grid-column: 3/5;
+}
+
+.other ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+
+  .artist-form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
