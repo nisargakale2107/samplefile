@@ -1,21 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-  
+import { ArtistContext } from "../context/artContext";  
+
 
 const ArtistCard = ({ artist }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const { setSelectedArtist } = useContext(ArtistContext); // Accessing setSelectedArtist from context
+
+  const handleArtistClick = () => {
+    setSelectedArtist(artist); // Setting the selected artist in the context
+  };
 
   return (
-    <Link to="/artist">
+    <Link to="/Artist" onClick={handleArtistClick}> {/* Removed state from Link */}
       <div
         className={`max-w-lg rounded overflow-hidden shadow-lg bg-transparent transition-transform duration-300 transform hover:scale-105 ${
-          isHovered ? 'shadow-xl' : ''
+          isHovered ? "shadow-xl" : ""
         }`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        style={{ height: '500px' }} // Adjust the height here as needed
+        style={{ height: "500px" }} // Adjust the height here as needed
       >
         <img
           className="h-64 w-64 object-cover rounded-full mx-auto"
@@ -23,13 +29,14 @@ const ArtistCard = ({ artist }) => {
           alt={artist.name}
         />
         <div className="px-6 py-4 bg-black bg-opacity-50">
-          <div className="font-bold text-xl mb-2 text-white">{artist.name}</div>
+          <div className="font-bold text-xl mb-2 text-white">
+            {artist.name}
+          </div>
         </div>
       </div>
     </Link>
   );
 };
-
 
 const Home = () => {
   const [artists, setArtists] = useState([]);
