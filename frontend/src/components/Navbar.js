@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IoCloseCircle } from 'react-icons/io5';
 import ArtistForm from './formartist';
 import '../css/navbar.css';
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isArtistFormOpen, setIsArtistFormOpen] = useState(false);
@@ -31,8 +32,9 @@ const Navbar = () => {
             <li>
               <button onClick={openArtistForm}>Become Artist</button>
             </li>
+          
             <li>
-              <button>Profile</button>
+            <NavLink to="/Profile">Profile</NavLink>
             </li>
             <li>Connect Wallet</li>
           </ul>

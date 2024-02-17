@@ -48,7 +48,7 @@ const About = () => (
       imageUrl={img2}
       textClassName="SushrutText"
       imageClassName="SushrutImage"
-      positionContent="Front- End Developer"
+      positionContent="Full-Stack Developer"
       contribution="Contribution- Front end "
       linkedinLink="https://in.linkedin.com/in/sushrut-dabholkar-a465a5289"
       instagramLink="sushrut2304"

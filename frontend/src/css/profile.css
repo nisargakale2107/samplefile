@@ -1,0 +1,42 @@
+.user-info-container {
+    display: grid;
+    grid-column: 1/2;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 0.5fr 4fr 1fr 1fr 0.5fr;
+}
+
+.user-img {
+    grid-row: 2/3;
+    background-color: rgb(255, 255, 255);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.user-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 3/4;
+    color: white;
+}
+
+.donate-btn {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    grid-row: 4/5;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 1.5rem;
+    background-color: #FFF67E;
+    cursor: pointer;
+}
+
+.icon-close-joinus {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+}
