@@ -1,0 +1,51 @@
+/* Card.css */
+
+.card {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-content {
+    display: flex;
+    padding: 20px;
+  }
+
+/* Assuming the footer has a class name of "footer" */
+
+.AboutContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minmax values as needed */
+  gap: 20px; /* Adjust the gap between cards as needed */
+  margin-bottom: 100px; /* Add margin to the bottom of the cards container */
+}
+
+  
+  .card-image {
+    flex: 1;
+  }
+  
+  .card-img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .card-text {
+    flex: 2;
+    padding: 0 20px;
+  }
+  
+  .Socials {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .Socials a {
+    margin-right: 10px;
+  }
+  
+  /* End of Card.css */
+  
