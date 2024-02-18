@@ -7,7 +7,7 @@ import { ArtistContext } from "../context/artContext";
 const UserProfile = ({ artist }) => {
   return (
     <div className="user-info-container grid justify-center items-center">
-      \<img
+      <img
           className="h-64 w-64 object-cover rounded-full mx-auto"
           src={artist.image}
           alt={artist.name}

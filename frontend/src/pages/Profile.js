@@ -92,7 +92,3 @@ const Profile = ({onClose}) => {
 };
 
 export default Profile;
-
-
-
-
