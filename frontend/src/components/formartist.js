@@ -7,6 +7,8 @@ const ArtistForm = ({ onClose }) => {
   const [location, setLocation] = useState('');
   const [instagramId, setInstagramId] = useState('');
   const [twitterId, setTwitterId] = useState('');
+  const [ImageId, setImageId] = useState('');
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,6 +16,7 @@ const ArtistForm = ({ onClose }) => {
     console.log('Location:', location);
     console.log('Instagram ID:', instagramId);
     console.log('Twitter ID:', twitterId);
+    console.log('Image ID:', ImageId);
     onClose(); // Close the form when submitted
   };
 
@@ -35,6 +38,9 @@ const ArtistForm = ({ onClose }) => {
         <br />
         <label htmlFor="twitterId">Twitter ID:</label>
         <input type="text" id="twitterId" value={twitterId} onChange={(e) => setTwitterId(e.target.value)} />
+        <br />
+        <label htmlFor="ImageId">Upload Image:</label>
+        <input type="file" id="ImageId" value={ImageId} onChange={(e) => setImageId(e.target.value)} />
         <br />
         <button type="submit">Submit</button>
       </form>
