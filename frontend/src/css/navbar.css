@@ -13,6 +13,8 @@
     justify-content: center;
     grid-column: 1/2;
     font-size: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .other {
