@@ -3,15 +3,29 @@
     justify-content: center;
     margin-top: 20px; /* Adjust as needed */
   }
+  .play-now-btn {
+    background:rgb(40, 178, 40); /* Blue background color */
+    text-align: center;
+    width:190px;
+    margin-right: 22px;
+    margin-left: 10px;
+    height:40px;
+    color: white; /* White text color */
+    padding: 10px 10px; /* Padding around the text */
+    border: solid rgb(107, 104, 104) ; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+  }
   .buy-now-btn {
-    background-color: #007bff; /* Blue background color */
-    width:170px;
+    background:linear-gradient(to right, #8860D0 ,#5AB9EA);; /* Blue background color */
+    text-align: center;
+    width:180px;
     margin-right: 20px;
     margin-left: 20px;
     height:40px;
     color: white; /* White text color */
     padding: 10px 10px; /* Padding around the text */
-    border: none; /* No border */
+    border: solid rgb(107, 104, 104) ; /* No border */
     border-radius: 10px; /* Rounded corners */
     cursor: pointer; /* Cursor on hover */
   }

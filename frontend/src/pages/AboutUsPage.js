@@ -1,4 +1,5 @@
 import React from 'react';
+import App from '../components/playsong'
 import Footer from '../components/Footer';
 import About from '../components/About'; 
 // Adjust the path accordingly
@@ -9,6 +10,7 @@ const AboutUsPage = () => {
     <div>
       <Navbar/>
       <About />
+      <App/>
       <Footer />
     </div>
   );

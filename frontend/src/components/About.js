@@ -47,11 +47,11 @@ const About = () => (
       title="Sushrut Dabholkar"
       imageUrl={img2}
       textClassName="SushrutText"
-      imageClassName="SushrutImage"
+      imageClassName="SushrutImage"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
       positionContent="Full-Stack Developer"
       contribution="Contribution- Front end "
       linkedinLink="https://in.linkedin.com/in/sushrut-dabholkar-a465a5289"
-      instagramLink="sushrut2304"
+      instagramLink="https://www.instagram.com/sushrut2304?igsh=MThxNHBtNTd4YzFwZg%3D%3D&utm_source=qr"
       githubLink="https://github.com/SushrutDabholkar04"
     />
     {/* Add more Card components for other team members */}

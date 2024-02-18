@@ -16,6 +16,7 @@
 
 .user-name {
     display: flex;
+    font-size: 25px;
     justify-content: center;
     align-items: center;
     grid-row: 3/4;
@@ -31,7 +32,7 @@
     height: 3rem;
     width: 10rem;
     border-radius: 1.5rem;
-    background-color: #FFF67E;
+    background-color: black;
     cursor: pointer;
 }
 

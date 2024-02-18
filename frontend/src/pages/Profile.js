@@ -4,7 +4,7 @@ import '../css/profile.css';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const UserProfile = ({ parameter }) => {
+const UserProfile = ({ parameter, onSongClick }) => {
   return (
     <>
       <div className="user-info-container">
@@ -16,7 +16,7 @@ const UserProfile = ({ parameter }) => {
           />
        
         <p className="user-name ">{parameter.username}</p>
-        <button className="donate-btn">COLLECT FUND</button>
+        <button className="donate-btn text-white">COLLECT FUND</button>
       </div>
     </>
   );
@@ -63,6 +63,12 @@ const Profile = ({onClose}) => {
     }
   };
 
+  const handleSongClick = (songIndex) => {
+    // Play the song associated with the clicked index
+    console.log("Playing song:", SongsData[songIndex].songs);
+    // Implement your logic to play the song here
+  };
+
   return (
     <>
       <Navbar />
@@ -79,9 +85,13 @@ const Profile = ({onClose}) => {
           {SongsData.slice(0, index + 1).map((item, idx) => (
             <div
               key={idx}
-              className="songs-div bg-yellow-300 text-white self-center text-center h-10 w-80 rounded-md"
+              className="songs-div bg-black text-white self-center text-center h-10 w-80 rounded-md"
+              onClick={() => handleSongClick(idx)} // Add onClick handler
             >
               {item.songs}
+              <div>
+                  <button className="play-now-btn">Play Now</button>
+                </div>
             </div>
           ))}
         </div>
