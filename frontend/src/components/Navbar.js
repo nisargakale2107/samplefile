@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="nav-container ">
-        <div className="website-name">Website Name</div>
+        <div className="website-name">TuneTrax</div>
         <div className="other">
           <ul>
             <li>
