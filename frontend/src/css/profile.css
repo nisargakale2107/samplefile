@@ -19,7 +19,6 @@
     justify-content: center;
     align-items: center;
     grid-row: 3/4;
-    color: white;
 }
 
 .donate-btn {
@@ -31,7 +30,7 @@
     height: 3rem;
     width: 10rem;
     border-radius: 1.5rem;
-    background-color: #FFF67E;
+    background: linear-gradient(to right, #8860D0, #5AB9EA);
     cursor: pointer;
 }
 

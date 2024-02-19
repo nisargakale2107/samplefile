@@ -1,13 +1,13 @@
-import React from 'react';
-import img1 from './../images/myimage.jpg';
-import img2 from './../images/iimg.jpg';
+import React from "react";
+import img1 from "./../images/myimage.jpg";
+import img2 from "./../images/iimg.jpg";
 
-import Card from './Card';
-import '../css/About.css';
+import Card from "./Card";
+import "../css/About.css";
 
 const About = () => (
   <div className="AboutContent">
-    <Card 
+    <Card
       title="Vedhas Naik"
       imageUrl="https://res.cloudinary.com/drf1yrgws/image/upload/c_crop,g_auto,h_500,w_490/about%20us/uix5jbu6qkgoxoarijqd.jpg"
       textClassName="VedhasText"
@@ -20,18 +20,18 @@ const About = () => (
       twitterLink="https://x.com/NaikVedhas58616?t=8h08Xbvh3GMAlb9y-SOmuQ&s=08"
     />
     <Card
-        title="Aastha Mhatre"
-        imageUrl="https://res.cloudinary.com/drf1yrgws/image/upload/c_crop,g_auto,h_1150,w_1150/about%20us/jdmozb4ckfqmvw3nqi7x.jpg"
-        textClassName="AasthaText"
-        imageClassName="AasthaImage"
-        positionContent="Front- End Developer"
-        contribution="Contribution- Front end "
-        linkedinLink="https://www.linkedin.com/in/aastha-mhatre-3226722b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-        instagramLink="https://www.instagram.com/aastha_2675/"
-        githubLink="https://github.com/Aastha2675"
-        twitterLink="https://x.com/AasthaMhatre?t=YxEVqip8ExYRDolX16OCEg&s=08"
-      />
-    <Card 
+      title="Aastha Mhatre"
+      imageUrl="https://res.cloudinary.com/drf1yrgws/image/upload/c_crop,g_auto,h_1150,w_1150/about%20us/jdmozb4ckfqmvw3nqi7x.jpg"
+      textClassName="AasthaText"
+      imageClassName="AasthaImage"
+      positionContent="Front- End Developer"
+      contribution="Contribution- Front end "
+      linkedinLink="https://www.linkedin.com/in/aastha-mhatre-3226722b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      instagramLink="https://www.instagram.com/aastha_2675/"
+      githubLink="https://github.com/Aastha2675"
+      twitterLink="https://x.com/AasthaMhatre?t=YxEVqip8ExYRDolX16OCEg&s=08"
+    />
+    <Card
       title="Nisarga Kale"
       imageUrl={img1}
       textClassName="NisargaText"
@@ -43,7 +43,7 @@ const About = () => (
       githubLink="https://github.com/nisargakale2107"
       twitterLink="https://x.com/nisarga18225?t=I0jCpcD4nTHblz8CPJ8cIQ&s=03"
     />
-    <Card 
+    <Card
       title="Sushrut Dabholkar"
       imageUrl={img2}
       textClassName="SushrutText"

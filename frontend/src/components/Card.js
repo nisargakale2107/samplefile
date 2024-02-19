@@ -1,6 +1,6 @@
-import React from 'react';
-import { FaLinkedin, FaInstagram, FaGithub, FaTwitter } from 'react-icons/fa';
-import '../css/Card.css';
+import React from "react";
+import { FaLinkedin, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
+import "../css/Card.css";
 
 const Card = ({
   title,
@@ -12,7 +12,7 @@ const Card = ({
   linkedinLink,
   instagramLink,
   githubLink,
-  twitterLink
+  twitterLink,
 }) => (
   <article className="card">
     <div className="card-content">
@@ -26,10 +26,18 @@ const Card = ({
       </div>
     </div>
     <div className="Socials">
-      <a href={linkedinLink}><FaLinkedin style={{ fontSize: 24 }} /></a>
-      <a href={instagramLink}><FaInstagram style={{ fontSize: 24 }} /></a>
-      <a href={githubLink}><FaGithub style={{ fontSize: 24 }} /></a>
-      <a href={twitterLink}><FaTwitter style={{ fontSize: 24 }} /></a>
+      <a href={linkedinLink}>
+        <FaLinkedin style={{ fontSize: 24 }} />
+      </a>
+      <a href={instagramLink}>
+        <FaInstagram style={{ fontSize: 24 }} />
+      </a>
+      <a href={githubLink}>
+        <FaGithub style={{ fontSize: 24 }} />
+      </a>
+      <a href={twitterLink}>
+        <FaTwitter style={{ fontSize: 24 }} />
+      </a>
     </div>
   </article>
 );
