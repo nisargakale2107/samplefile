@@ -19,6 +19,7 @@
     justify-content: center;
     align-items: center;
     grid-row: 3/4;
+    color: white;
 }
 
 .donate-btn {
@@ -30,8 +31,12 @@
     height: 3rem;
     width: 10rem;
     border-radius: 1.5rem;
-    background: linear-gradient(to right, #8860D0, #5AB9EA);
+    background-color: #f8b4d9;
     cursor: pointer;
+}
+
+.donate-btn:hover{
+    background-color: #f17eb8;
 }
 
 .icon-close-joinus {
